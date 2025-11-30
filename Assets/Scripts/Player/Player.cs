@@ -67,7 +67,7 @@ public class Player : MonoBehaviour, IDamageable, IHealable
     {
         Vector2 movementInput = _playerInput.actions["Movement"].ReadValue<Vector2>();
 
-        _RB.velocity = movementInput * _speed;
+        _RB.linearVelocity = movementInput * _speed;
         HandleRotation(movementInput.x);
 
         if (_animator != null)

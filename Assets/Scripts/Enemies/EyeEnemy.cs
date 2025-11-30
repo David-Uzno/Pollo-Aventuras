@@ -60,7 +60,7 @@ public class EyeEnemy : FatherEnemy
         Rigidbody2D bulletRB = bullet.GetComponent<Rigidbody2D>();
 
         if (bulletRB != null)
-            bulletRB.velocity = _firePosition * _bulletSpeed;
+            bulletRB.linearVelocity = _firePosition * _bulletSpeed;
 
         _canShoot = false;
         StartCoroutine(ResetShoot());

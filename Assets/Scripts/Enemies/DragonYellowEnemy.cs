@@ -60,7 +60,7 @@ public class DragonYellowEnemy : FatherEnemy
     #region Movement
     private void Move()
     {
-        _rb.velocity = _moveDirection * _moveSpeed;
+        _rb.linearVelocity = _moveDirection * _moveSpeed;
     }
 
     private void ChangeDirectionIfNeeded()
