@@ -2,6 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+.utmp/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -9,6 +10,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+*.log
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -59,6 +61,7 @@ sysinfo.txt
 *.apk
 *.aab
 *.unitypackage
+*.unitypackage.meta
 *.app
 
 # Crashlytics generated file
@@ -70,3 +73,21 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# OPS Obfuscator: Allow necessary DLLs
+!Assets/OPS/Obfuscator/Editor/Plugins/OPS.Obfuscator.Editor.dll
+!Assets/OPS/Obfuscator/Editor/Plugins/OPS.Obfuscator.Editor.dll.meta
+!Assets/OPS/Editor/Plugins/Mono.Cecil/OPS.Mono.Cecil.Mdb.dll
+!Assets/OPS/Editor/Plugins/Mono.Cecil/OPS.Mono.Cecil.Mdb.dll.meta
+!Assets/OPS/Editor/Plugins/Mono.Cecil/OPS.Mono.Cecil.Pdb.dll
+!Assets/OPS/Editor/Plugins/Mono.Cecil/OPS.Mono.Cecil.Pdb.dll.meta
+!Assets/OPS/Editor/Plugins/Mono.Cecil/OPS.Mono.Cecil.Rocks.dll
+!Assets/OPS/Editor/Plugins/Mono.Cecil/OPS.Mono.Cecil.Rocks.dll.meta
+!Assets/OPS/Editor/Plugins/Mono.Cecil/OPS.Mono.Cecil.dll
+!Assets/OPS/Editor/Plugins/Mono.Cecil/OPS.Mono.Cecil.dll.meta
+!Assets/OPS/Plugins/Json/OPS.Serialization.Json.dll
+!Assets/OPS/Plugins/Json/OPS.Serialization.Json.dll.meta
+
+# OPS Obfuscator: Ignore generated logs
+Assets/OPS/Obfuscator/Log/*.txt
+Assets/OPS/Obfuscator/Log/*.log
